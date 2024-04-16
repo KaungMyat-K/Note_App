@@ -17,7 +17,7 @@ const BottomTabBar = ({ navigation, state }) => (
 )
 
 const TabNavigator = () => (
-	<Navigator tabBar={(props) => <BottomTabBar {...props} />}>
+	<Navigator tabBar={(props) => <BottomTabBar {...props} />} screenOptions={{headerShown:false}}> 
 		<Screen name="Create" component={CreateNote} />
 		<Screen name="AllNotes" component={AllNotes} />
 		<Screen name="Note" component={Note} />
